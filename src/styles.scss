@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+// Palettes de couleurs 
+
+// Couleurs utilisées : Bleu classique foncé (#0A1828), turquoise (#178582), or (#BFA181)
+
+// Couleurs utilisées : Bleu (#002349), or (#957C3D)
+
+// Couleurs utilisées : Cardin Green (#0C1A1A), duveteux sarcelle (#6ACFC7)
+
+// *{
+//     background-color: #0A1828;
+//     color: #BFA181;
+// }
+
+$primary: #0A1828;
+$secondary: #BFA181;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
