@@ -10,12 +10,15 @@
 
 // Couleurs utilisées : Cardin Green (#0C1A1A), duveteux sarcelle (#6ACFC7)
 
-// *{
-//     background-color: #0A1828;
-//     color: #BFA181;
-// }
-
 $primary: #0A1828;
 $secondary: #BFA181;
+$light: #178582;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color: #0A1828;
+    color: #BFA181;
+}
