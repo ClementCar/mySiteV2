@@ -1,6 +1,6 @@
 <!-- Header ============================================================================================= -->
 <header>
-  <nav class="bg-light">
+  <!-- <nav class="bg-light">
     <div class="container py-4">
       <ul ngbNav #nav="ngbNav" class="nav-tabs">
         <li ngbNavItem>
@@ -10,31 +10,47 @@
           <a ngbNavLink>Portfolio</a>
         </li>
       </ul>
-      <!-- <div [ngbNavOutlet]="nav"></div> -->
+     <div [ngbNavOutlet]="nav"></div>
     </div>
+  </nav> -->
+
+  <!-- ScrollSpy -->
+  <nav id="navBar" class="navbar bg-light px-3 mb-3">
+    <a href="#" class="navbar-brand">Clément Carcenac</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#home" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#caroussel" class="nav-link">Beautiful Images</a>
+      </li>
+      <li class="nav-item">
+        <a href="btnTest" class="nav-link">For Tests</a>
+      </li>
+    </ul>
   </nav>
 </header>
 
-
+<!-- <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"></div> -->
 
 <!-- Page D'acceuil ============================================================================================= -->
-<section class="vw-100 vh-100">
-    <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <h1 class="fw-bold">Clément Carcenac</h1>
-            <h2 class="fw-light">Développeur Web</h2>
-            <button class="btn btn-primary mt-3">En savoir plus</button>
-          </div>
-          <div class="col">
-            <img src="./assets/logo-black.JPG">
-          </div>
+<section id="home" class="vw-100 vh-100">
+  <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <h1 class="fw-bold">Clément Carcenac</h1>
+          <h2 class="fw-light">Développeur Web</h2>
+          <button class="btn btn-primary mt-3">En savoir plus</button>
         </div>
-    </div>
+        <div class="col">
+          <img src="./assets/logo-black.JPG">
+        </div>
+      </div>
+  </div>
 </section>
-
+  
 <!-- Caroussel ============================================================================================= -->
-<section class="container my-4 bg-primary">
+<section id="caroussel" class="container my-4 bg-primary">
   <ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
@@ -65,30 +81,40 @@
     </ng-template>
   </ngb-carousel>
 </section>
-
-<!-- Boutton Trigger ============================================================================================= -->
-<section>
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Mentions Légales
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              ...
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+  
+<!-- Boutton offcanvas Trigger ============================================================================================= -->
+  
+<section id="btnTest" class="container my4">
+  
+  <!-- OffCanvas -->
+  <ng-template #content let-offcanvas>
+    <div class="offcanvas-header">
+      <h4 class="offcanvas-title"></h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>One fine Body of luxury</p>
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
       </div>
-  </div>
-</div>
+    </div>
+  </ng-template>
+  
+  <button class="btn btn-lg btn-outline-light" (click)="open(content)">Démo du Boutton OffCanvas</button>
+  
+  <!-- Modal  -->
+  <ng-template #modalContent let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Hey ! Bienvenue !</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <p>Et oui, ça marche !</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn bt-outline-dark" (click)="modal.close('Close click')">Fermer</button>
+    </div>
+  </ng-template>
+  <button type="button" class="btn btn-lg btn-outline-light" (click)="openModal(modalContent)">Test du Modal !</button>
+  
 </section>
