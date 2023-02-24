@@ -1,13 +1,17 @@
 <!-- Header ============================================================================================= -->
 <header>
-  <!-- <nav class="bg-light">
+  <!-- <nav id="navBar" class="fixed-top navbar bg-light">
     <div class="container py-4">
+      <a href="#" class="navbar-brand">Clément Carcenac</a>
       <ul ngbNav #nav="ngbNav" class="nav-tabs">
         <li ngbNavItem>
-          <a ngbNavLink>Home</a>
+          <a ngbNavLink href="#home">Home</a>
         </li>
         <li ngbNavItem>
-          <a ngbNavLink>Portfolio</a>
+          <a ngbNavLink href="#caroussel">Portfolio</a>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink href="#btnTest">Bouttons de Test</a>
         </li>
       </ul>
      <div [ngbNavOutlet]="nav"></div>
@@ -15,7 +19,7 @@
   </nav> -->
 
   <!-- ScrollSpy -->
-  <nav id="navBar" class="navbar bg-light px-3 mb-3">
+  <nav id="navBar" class="fixed-top navbar bg-light px-3 mb-3">
     <a href="#" class="navbar-brand">Clément Carcenac</a>
     <ul class="nav nav-pills">
       <li class="nav-item">
@@ -25,13 +29,13 @@
         <a href="#caroussel" class="nav-link">Beautiful Images</a>
       </li>
       <li class="nav-item">
-        <a href="btnTest" class="nav-link">For Tests</a>
+        <a href="#btnTest" class="nav-link">For Tests</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<!-- <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"></div> -->
+<div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"></div>
 
 <!-- Page D'acceuil ============================================================================================= -->
 <section id="home" class="vw-100 vh-100">
@@ -50,7 +54,7 @@
 </section>
   
 <!-- Caroussel ============================================================================================= -->
-<section id="caroussel" class="container my-4 bg-primary">
+<section id="caroussel" class="container my-4">
   <ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
@@ -84,7 +88,7 @@
   
 <!-- Boutton offcanvas Trigger ============================================================================================= -->
   
-<section id="btnTest" class="container my4">
+<section id="btnTest" class="container my-4">
   
   <!-- OffCanvas -->
   <ng-template #content let-offcanvas>

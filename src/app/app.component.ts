@@ -7,6 +7,7 @@ import { NgbActiveModal, NgbModal, NgbOffcanvas } from '@ng-bootstrap/ng-bootstr
   styles: []
 })
 export class AppComponent {
+  active = 1;
   title = 'mySiteV2';
 
   constructor(private offCanvasService: NgbOffcanvas,
