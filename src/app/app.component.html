@@ -1,48 +1,43 @@
-<!-- <header class="header">
-  <nav class="navbar navbar-custom">
-
+<!-- <header>
+  <nav class="navbar navbar-expand-md bg-light">
+    <a href="#" class="navbar-brand">Clément Carcenac</a>
     <div class="container">
-
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target="#custom-collapse">
-          <span class="sr-only">MENU</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">GMANZOLA</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="custom-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#home">Accueil</a>
+      <ul ngbNav [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+          <a ngbNavLink>Home</a>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink>Portfolio</a>
+        </li>
+        <li [ngbNavItem]="3">
+          <a ngbNavLink href="#btnTest">Bouton Test</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+</header> -->
+<!-- Header =================================================================================== -->
+<header>
+  <nav class="navbar navbar-expand-md text-uppercase fw-bold bg-light navbar-light fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand"><span class="bg-secondary bg-gradient p-1 rounded-3 text-white">Clément</span> Carcenac</a>
+      <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation"></button>
+      <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link">Accueil</a>
           </li>
-          <li>
-            <a href="#presentation">Présentation</a>
+          <li class="nav-item">
+            <a href="#caroussel" class="nav-link">Portfolio</a>
           </li>
-          <li>
-            <a href="#portfolio">Réalisation</a>
-          </li>
-          <li>
-            <a href="#services">Activités</a>
-          </li>
-          <li>
-            <a href="#about">Compétences</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="" target="_blank">
-              Mon cv</a>
+          <li class="nav-item">
+            <a href="#btnTest" class="nav-link">Boutton Test</a>
           </li>
         </ul>
       </div>
-
     </div>
   </nav>
-</header> -->
+</header>
 
 
 <!-- Page D'acceuil ============================================================================================= -->
@@ -60,45 +55,6 @@
       </div>
   </div>
 </section>
-
-<!-- Header ============================================================================================= -->
-<header>
-  <!-- <nav id="navBar" class="fixed-top navbar bg-light">
-    <div class="container py-4">
-      <a href="#" class="navbar-brand">Clément Carcenac</a>
-      <ul ngbNav #nav="ngbNav" class="nav-tabs">
-        <li ngbNavItem>
-          <a ngbNavLink href="#home">Home</a>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink href="#caroussel">Portfolio</a>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink href="#btnTest">Bouttons de Test</a>
-        </li>
-      </ul>
-     <div [ngbNavOutlet]="nav"></div>
-    </div>
-  </nav> -->
-
-  <!-- ScrollSpy -->
-  <nav id="navBar" class="navbar-light navbar bg-light px-3 mb-3">
-    <a href="#" class="navbar-brand">Clément Carcenac</a>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a href="#home" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#caroussel" class="nav-link">Beautiful Images</a>
-      </li>
-      <li class="nav-item">
-        <a href="#btnTest" class="nav-link">For Tests</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<!-- <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"></div> -->
   
 <!-- Caroussel ============================================================================================= -->
 <section id="caroussel" class="container my-4">
