@@ -28,6 +28,9 @@
             <a href="#home" class="nav-link">Accueil</a>
           </li>
           <li class="nav-item">
+            <a href="#presentation" class="nav-link">Présentation</a>
+          </li>
+          <li class="nav-item">
             <a href="#caroussel" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-item">
@@ -39,22 +42,20 @@
   </nav>
 </header>
 
+<app-home></app-home>
 
-<!-- Page D'acceuil ============================================================================================= -->
-<section id="home" class="vw-100 vh-100">
-  <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
-          <h1 class="fw-bold">Clément Carcenac</h1>
-          <h2 class="fw-light">Développeur Web</h2>
-          <button class="btn btn-primary mt-3">En savoir plus</button>
-        </div>
-        <div class="col">
-          <img src="./assets/logo-black.JPG">
-        </div>
-      </div>
-  </div>
+<!-- Presentation ============================================================================================= -->
+<section id="presentation" class="container">
+  <Div class="row">
+    <p>zzzzzzzzzzzzzzzz zzzzz zzzzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzzzz zzzzzzzzzz zzzzzzzzzzzzzzzzz
+      zzzzzzzzzzzzzzzz zzzzz zzzzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzzzz zzzzzzzzzz zzzzzzzzzzzzzzzzz
+      zzzzzzzzzzzzzzzz zzzzz zzzzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzzzz zzzzzzzzzz zzzzzzzzzzzzzzzzz
+      zzzzzzzzzzzzzzzz zzzzz zzzzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzzzz zzzzzzzzzz zzzzzzzzzzzzzzzzz
+    </p>
+  </Div>
 </section>
+
+<app-portfolio></app-portfolio>
   
 <!-- Caroussel ============================================================================================= -->
 <section id="caroussel" class="container my-4">
@@ -125,3 +126,13 @@
   <button type="button" class="btn btn-lg btn-outline-light" (click)="openModal(modalContent)">Test du Modal !</button>
   
 </section>
+<div class="container px-4 text-center">
+  <div class="row gx-5">
+    <div class="col">
+     <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+  </div>
+</div>
