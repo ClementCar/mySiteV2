@@ -136,3 +136,70 @@
     </div>
   </div>
 </div>
+
+<!-- Test nav start -->
+<div class="container">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>First</a>
+      <ng-template ngbNavContent>
+        <ngb-carousel>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="img-fluid" src="https://picsum.photos/1920/1080?random=1">
+            </div>
+            <div class="carousel-caption">
+              <h3>Première image de notre Carousel</h3>
+              <p>C'est une magnifique image comme vous pouvez le voir</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="img-fluid" src="https://picsum.photos/1920/1080?random=2">
+            </div>
+            <div class="carousel-caption">
+              <h3>Deuxième image de notre Carousel</h3>
+              <p>C'est une magnifique image comme vous pouvez le voir</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img class="img-fluid" src="https://picsum.photos/1920/1080?random=3">
+            </div>
+            <div class="carousel-caption">
+              <h3>Et Dernière image de notre Carousel</h3>
+              <p>C'est une magnifique image comme vous pouvez le voir</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Second</a>
+      <ng-template ngbNavContent>
+        <video controls src="../assets/chouette/Chouette.mp4"></video>
+      </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+</div>
+<!-- Test nav End -->
+
+<div class="container">
+  <div class="row g-4 d-flex justify-content-center">
+    <div class="col">
+      <hr>
+      <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+      </p>
+    </div>
+    <div class="col">
+      <hr>
+      <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+      </p>
+    </div>
+  </div>
+</div>
