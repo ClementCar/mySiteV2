@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    PortfolioDetailComponent
   ],
   imports: [
     BrowserModule,

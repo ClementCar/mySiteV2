@@ -1,0 +1,65 @@
+<!-- Nav caroussel / video start -->
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>Photos</a>
+      <ng-template ngbNavContent>
+        <!-- Caroussel Start -->
+        <ngb-carousel class="bg-primary vh-60">
+            <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="custom-img mx-auto d-block" [src]="project.logo">
+            </div>
+            <div class="carousel-caption">
+                <h3>Première image de notre Carousel</h3>
+                <p>C'est une magnifique image comme vous pouvez le voir</p>
+            </div>
+            </ng-template>
+            <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="custom-img mx-auto d-block" [src]="project.image">
+            </div>
+            <div class="carousel-caption">
+                <h3>Deuxième image de notre Carousel</h3>
+                <p>C'est une magnifique image comme vous pouvez le voir</p>
+            </div>
+            </ng-template>
+            <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img class="custom-img mx-auto d-block" [src]="project.image2">
+            </div>
+            <div class="carousel-caption">
+                <h3>Et Dernière image de notre Carousel</h3>
+                <p>C'est une magnifique image comme vous pouvez le voir</p>
+            </div>
+            </ng-template>
+        </ngb-carousel>
+        <!-- Caroussel End -->
+        <div class="container">
+            <div class="row g-4 d-flex justify-content-center">
+              <div class="col">
+                <hr>
+                <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                </p>
+              </div>
+              <div class="col">
+                <hr>
+                <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                  zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                </p>
+              </div>
+            </div>
+          </div>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Vidéo</a>
+      <ng-template ngbNavContent>
+        <video class="mx-auto d-block" controls [src]="project.video"></video>
+      </ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+<!-- Nav caroussel / video end -->

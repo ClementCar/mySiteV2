@@ -16,57 +16,11 @@
                             <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
                         </div>
                         <div class="offcanvas-body">
-
-                            <!-- Nav caroussel / video start -->
-                            <ul ngbNav #nav="ngbNav" class="nav-tabs">
-                                <li ngbNavItem>
-                                  <a ngbNavLink>Photos</a>
-                                  <ng-template ngbNavContent>
-                                    <!-- Caroussel Start -->
-                                    <ngb-carousel>
-                                        <ng-template ngbSlide>
-                                        <div class="picsum-img-wrapper h-80">
-                                            <img class="img-fluid mx-auto d-block" [src]="project.logo">
-                                        </div>
-                                        <div class="carousel-caption">
-                                            <h3>Première image de notre Carousel</h3>
-                                            <p>C'est une magnifique image comme vous pouvez le voir</p>
-                                        </div>
-                                        </ng-template>
-                                        <ng-template ngbSlide>
-                                        <div class="picsum-img-wrapper h-80">
-                                            <img class="img-fluid mx-auto d-block" [src]="project.image">
-                                        </div>
-                                        <div class="carousel-caption">
-                                            <h3>Deuxième image de notre Carousel</h3>
-                                            <p>C'est une magnifique image comme vous pouvez le voir</p>
-                                        </div>
-                                        </ng-template>
-                                        <ng-template ngbSlide>
-                                        <div class="picsum-img-wrapper h-80">
-                                            <img class="img-fluid mx-auto d-block" [src]="project.image2">
-                                        </div>
-                                        <div class="carousel-caption">
-                                            <h3>Et Dernière image de notre Carousel</h3>
-                                            <p>C'est une magnifique image comme vous pouvez le voir</p>
-                                        </div>
-                                        </ng-template>
-                                    </ngb-carousel>
-                                    <!-- Caroussel End -->
-                                  </ng-template>
-                                </li>
-                                <li ngbNavItem>
-                                  <a ngbNavLink>Vidéo</a>
-                                  <ng-template ngbNavContent>
-                                    <video class="mx-auto d-block" controls [src]="project.video"></video>
-                                  </ng-template>
-                                </li>
-                              </ul>
-                              <div [ngbNavOutlet]="nav"></div>
-                            <!-- Nav caroussel / video end -->
+                            
+                            <app-portfolio-detail [project]="project"></app-portfolio-detail>
                           
                             <div class="text-center">
-                                <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
+                                <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Fermer</button>
                             </div>
                         </div>
                     </ng-template>
