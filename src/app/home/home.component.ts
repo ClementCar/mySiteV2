@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { delay } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // setTimeout(this.showDate(), 1000)
+    // setTimeout(this.showDate, 1000)
     this.showDate()
   }
 
@@ -33,6 +34,15 @@ export class HomeComponent implements OnInit {
     if(+this.seconds < 10 ){
       this.seconds = '0' + this.seconds;
     }
+    // setTimeout(this.showDate, 1000)
+    console.log(this.hours, this.minutes, this.seconds)
+    // this.showDate().pipe(delay(1000))
+    this.refresh()
+  }
+
+  refresh() {
+    var t = 1000;
+    setTimeout(this.showDate, t)
   }
 
 }
