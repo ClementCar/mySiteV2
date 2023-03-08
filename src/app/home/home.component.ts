@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
     // setTimeout(this.showDate, 1000)
     console.log(this.hours, this.minutes, this.seconds)
     // this.showDate().pipe(delay(1000))
-    this.refresh()
+    this.refresh
   }
 
   refresh() {
