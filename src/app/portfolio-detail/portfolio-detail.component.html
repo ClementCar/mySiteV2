@@ -5,7 +5,16 @@
       <ng-template ngbNavContent>
         <!-- Caroussel Start -->
         <ngb-carousel class="bg-primary vh-60">
-            <ng-template ngbSlide>
+            <ng-template ngbSlide *ngFor="let image of project.images">
+              <div class="picsum-img-wrapper">
+                <img [src]="image" alt="" class="custom-img mx-auto d-block">
+              </div>
+              <!-- <div class="caroussel-caption">
+                <h3>Caroussel</h3>
+                <p>description</p>
+              </div> -->
+            </ng-template>
+            <!-- <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
                 <img class="custom-img mx-auto d-block" [src]="project.logo">
             </div>
@@ -31,7 +40,7 @@
                 <h3>Et Dernière image de notre Carousel</h3>
                 <p>C'est une magnifique image comme vous pouvez le voir</p>
             </div>
-            </ng-template>
+            </ng-template> -->
         </ngb-carousel>
         <!-- Caroussel End -->
         <div class="container">
