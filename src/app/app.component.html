@@ -17,11 +17,17 @@
   </nav> 
 </header> -->
 <!-- Header =================================================================================== -->
+
+
+<app-home></app-home>
+
 <header>
-  <nav class="navbar navbar-expand-md text-uppercase fw-bold bg-light navbar-light fixed-top">
+  <nav class="navbar navbar-expand-md text-uppercase fw-bold bg-light navbar-light sticky-top">
     <div class="container">
       <a href="#" class="navbar-brand"><span class="bg-secondary bg-gradient p-1 rounded-3 text-white">Clément</span> Carcenac</a>
-      <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation"></button>
+      <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation">
+        <i class="fas fa-bars"></i>
+      </button>
       <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
           <li class="nav-item active">
@@ -41,8 +47,6 @@
     </div>
   </nav>
 </header>
-
-<app-home></app-home>
 
 <!-- Presentation start ============================================================================================= -->
 <section id="presentation" class="bg-light">
@@ -101,9 +105,21 @@
     <h3 class="my-5">Mes Compétences</h3>
     <hr>
     <div class="row">
-      <div>
+      <div class="d-flex">
         <i class="fab fa-angular"></i>
-        <p>Angular</p>
+        <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">HTML5</ngb-progressbar></p>
+      </div>
+      <div class="d-flex">
+        <i class="fab fa-angular"></i>
+        <p class="w-100"><ngb-progressbar type="success" [value]="75">CSS / SCSS </ngb-progressbar></p>
+      </div>
+      <div class="d-flex">
+        <i class="fab fa-angular"></i>
+        <p class="w-100"><ngb-progressbar type="success" [value]="25">Angular</ngb-progressbar></p>
+      </div>
+      <div class="d-flex">
+        <i class="fab fa-angular"></i>
+        <p class="w-100"><ngb-progressbar type="success" [value]="25">Angular</ngb-progressbar></p>
       </div>
     </div>
   </div>
