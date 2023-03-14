@@ -22,7 +22,7 @@
 <app-home></app-home>
 
 <header>
-  <nav class="navbar navbar-expand-md text-uppercase fw-bold bg-light navbar-light sticky-top">
+  <nav class="navbar navbar-expand-md text-uppercase fw-bold bg-light navbar-light fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand"><span class="bg-secondary bg-gradient p-1 rounded-3 text-white">Clément</span> Carcenac</a>
       <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation">
@@ -51,7 +51,7 @@
 <!-- Presentation start ============================================================================================= -->
 <section id="presentation" class="bg-light">
   <div class="container p-5">
-    <Div class="row text-center py-5">
+    <Div class="row text-center py-5 px-3">
       <h3 class="mb-5">Présentation</h3>
       <hr>
       <p>zzzzzzzzzzzzzzzz zzzzz zzzzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzzzz zzzzzzzzzz zzzzzzzzzzzzzzzzz
@@ -65,61 +65,51 @@
 <!-- Presentation end ============================================================================================= -->
 
 <app-portfolio></app-portfolio>
-  
-<!-- Caroussel ============================================================================================= -->
-<section id="caroussel" class="container my-4">
-  <ngb-carousel>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img class="img-fluid" src="https://picsum.photos/1920/1080?random=1">
-      </div>
-      <div class="carousel-caption">
-        <h3>Première image de notre Carousel</h3>
-        <p>C'est une magnifique image comme vous pouvez le voir</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img class="img-fluid" src="https://picsum.photos/1920/1080?random=2">
-      </div>
-      <div class="carousel-caption">
-        <h3>Deuxième image de notre Carousel</h3>
-        <p>C'est une magnifique image comme vous pouvez le voir</p>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img class="img-fluid" src="https://picsum.photos/1920/1080?random=3">
-      </div>
-      <div class="carousel-caption">
-        <h3>Et Dernière image de notre Carousel</h3>
-        <p>C'est une magnifique image comme vous pouvez le voir</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-</section>
 
 <!-- Skills start ============================================================================================= -->
 <section>
-  <div class="container">
+  <div class="container text-center">
     <h3 class="my-5">Mes Compétences</h3>
     <hr>
     <div class="row">
-      <div class="d-flex">
-        <i class="fab fa-angular"></i>
-        <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">HTML5</ngb-progressbar></p>
+      <div class="col">
+        <div class="d-flex">
+          <i class="fab fa-html5"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">HTML5</ngb-progressbar></p>
+        </div>
+        <div class="d-flex">
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-sass"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">CSS3 / SCSS</ngb-progressbar></p>
+        </div>
+        <div class="d-flex">
+          <i class="fab fa-js"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">Javascript / TypeScript</ngb-progressbar></p>
+        </div>
+        <div class="d-flex">
+          <i class="fab fa-angular"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">HTML5</ngb-progressbar></p>
+        </div>
       </div>
-      <div class="d-flex">
-        <i class="fab fa-angular"></i>
-        <p class="w-100"><ngb-progressbar type="success" [value]="75">CSS / SCSS </ngb-progressbar></p>
-      </div>
-      <div class="d-flex">
-        <i class="fab fa-angular"></i>
-        <p class="w-100"><ngb-progressbar type="success" [value]="25">Angular</ngb-progressbar></p>
-      </div>
-      <div class="d-flex">
-        <i class="fab fa-angular"></i>
-        <p class="w-100"><ngb-progressbar type="success" [value]="25">Angular</ngb-progressbar></p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="d-flex">
+          <i class="fab fa-angular"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">Angular</ngb-progressbar></p>
+        </div>
+        <div class="d-flex">
+          <i class="fab fa-bootstrap"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">Bootstrap</ngb-progressbar></p>
+        </div>
+        <div class="d-flex">
+          <i class="fab fa-node-js"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">Nodejs</ngb-progressbar></p>
+        </div>
+        <div class="d-flex">
+          <i class="fab fa-angular"></i>
+          <p class="w-100"><ngb-progressbar type="success" [value]="80" [striped]="true" [animated]="true">MySQL</ngb-progressbar></p>
+        </div>
       </div>
     </div>
   </div>
@@ -129,22 +119,6 @@
 <!-- Boutton offcanvas Trigger ============================================================================================= -->
   
 <section id="btnTest" class="container my-4">
-  
-  <!-- OffCanvas -->
-  <ng-template #content let-offcanvas>
-    <div class="offcanvas-header">
-      <h4 class="offcanvas-title"></h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
-    </div>
-    <div class="offcanvas-body">
-      <p>One fine Body of luxury</p>
-      <div class="text-end">
-        <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
-      </div>
-    </div>
-  </ng-template>
-  
-  <button class="btn btn-lg btn-outline-light" (click)="open(content)">Démo du Boutton OffCanvas</button>
   
   <!-- Modal  -->
   <ng-template #modalContent let-modal>
@@ -184,27 +158,15 @@
             <div class="picsum-img-wrapper">
               <img class="img-fluid" src="https://picsum.photos/1920/1080?random=1">
             </div>
-            <div class="carousel-caption">
-              <h3>Première image de notre Carousel</h3>
-              <p>C'est une magnifique image comme vous pouvez le voir</p>
-            </div>
           </ng-template>
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
               <img class="img-fluid" src="https://picsum.photos/1920/1080?random=2">
             </div>
-            <div class="carousel-caption">
-              <h3>Deuxième image de notre Carousel</h3>
-              <p>C'est une magnifique image comme vous pouvez le voir</p>
-            </div>
           </ng-template>
           <ng-template ngbSlide>
             <div class="picsum-img-wrapper">
               <img class="img-fluid" src="https://picsum.photos/1920/1080?random=3">
-            </div>
-            <div class="carousel-caption">
-              <h3>Et Dernière image de notre Carousel</h3>
-              <p>C'est une magnifique image comme vous pouvez le voir</p>
             </div>
           </ng-template>
         </ngb-carousel>
@@ -221,21 +183,26 @@
 </div>
 <!-- Test nav End -->
 
-<div class="container">
-  <div class="row g-4 d-flex justify-content-center">
-    <div class="col">
-      <hr>
-      <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-      </p>
-    </div>
-    <div class="col">
-      <hr>
-      <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-      </p>
+<!-- footer start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row text-center">
+      <div class="d-flex justify-content-center bg-secondary">
+        <a class="section__social__phone" href="tel:+33636671813" title="Numéro de téléphone">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a class="section__social__email" href="mailto:clementcarcenac@gmail.com" title="Adresse Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a class="section__social__github" href="https://github.com/ClementCar" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="section__social__linkedin" href="https://www.linkedin.com/in/clement-carcenac-4a61a11b0" target="_blank" title="Linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <p>© 2023 Clément CARCENAC, tous droits réservés.</p>
     </div>
   </div>
-</div>
+</footer>
+<!-- footer end -->

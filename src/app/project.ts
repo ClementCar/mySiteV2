@@ -3,10 +3,8 @@ export class Project {
     name!: string;
     logo!: string;
     images!: string[];
-    // image2!: string;
-    // image3!: string;
-    // image4!: string;
     video!: string;
+    skills!: string[];
     description!: string;
     gitlink!: string;
 }

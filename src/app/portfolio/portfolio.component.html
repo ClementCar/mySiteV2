@@ -13,15 +13,16 @@
 
                     <!-- OffCanvas Start -->
                     <ng-template #content let-offcanvas>
-                        <div class="offcanvas-header">
+                        <div class="offcanvas-header text-center">
                             <h4 class="offcanvas-title">{{project.name}}</h4>
+                            <!-- <img [src]="project.logo" alt=""> -->
                             <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
                         </div>
-                        <div class="offcanvas-body">
+                        <div class="offcanvas-body position-relative">
                             
                             <app-portfolio-detail [project]="project"></app-portfolio-detail>
                           
-                            <div class="text-center">
+                            <div class="text-center position-fixed bottom-0 end-0">
                                 <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Fermer</button>
                             </div>
                         </div>

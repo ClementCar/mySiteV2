@@ -10,20 +10,24 @@
 
 // Couleurs utilisées : Cardin Green (#0C1A1A), duveteux sarcelle (#6ACFC7)
 
-$primary: #0A1828;
-$secondary: #BFA181;
-$light: #178582;
+// $primary: #0A1828;
+// $secondary: #BFA181;
+// $light: #178582;
 
 // @import "../node_modules/bootstrap/scss/bootstrap";
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
-body{
-    background-color: #0A1828;
-    color: #BFA181;
-}
+// body{
+//     background-color: #0A1828;
+//     color: #BFA181;
+// }
 // .custom-img{
 //     width: auto;
 //     height: 60vh;
 //     max-width: 100%;
 // }
+
+h1, h2, h3, h4 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
