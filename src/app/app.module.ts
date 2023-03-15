@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PortfolioComponent,
-    PortfolioDetailComponent
+    PortfolioDetailComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
