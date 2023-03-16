@@ -1,0 +1,31 @@
+.custom-card{
+    height: 40vh;
+}
+
+.card-img{
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    opacity: 1;
+    // backface-visibility: hidden;
+    transition: .5s ease;
+}
+
+.btn-custom{
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.custom-card:hover .card-img{
+    opacity: 0.3;
+}
+
+.custom-card:hover .btn-custom{
+    opacity: 1;
+}

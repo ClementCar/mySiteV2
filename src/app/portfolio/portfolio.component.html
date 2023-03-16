@@ -5,33 +5,30 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-4" *ngIf="projects">
 
         <div class="col" *ngFor="let project of projects">
-            <div class="card custom-card">
-                <img [src]="project.logo" [alt]="project.name" class="card-img-top card-img">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">{{project.name}}</h5>
-                    <p class="card-text">{{project.description}}</p> -->
-
-                    <!-- OffCanvas Start -->
-                    <ng-template #content let-offcanvas>
-                        <div class="offcanvas-header text-center">
-                            <h4 class="offcanvas-title">{{project.name}}</h4>
-                            <!-- <img [src]="project.logo" alt=""> -->
-                            <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
+            <div class="card custom-card position-relative" borderCard>
+                <img [src]="project.logo" [alt]="project.name" class="card-img my-auto">
+                <!-- <div class="card-body">
+                    <h5 class="card-title">{{project.name}}</h5>
+                    <p class="card-text">{{project.description}}</p>
+                </div> -->
+                <!-- OffCanvas Start -->
+                <ng-template #content let-offcanvas>
+                    <div class="offcanvas-header text-center">
+                        <h4 class="offcanvas-title">{{project.name}}</h4>
+                        <!-- <img [src]="project.logo" alt=""> -->
+                        <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
+                    </div>
+                    <div class="offcanvas-body position-relative">
+                        
+                        <app-portfolio-detail [project]="project"></app-portfolio-detail>
+                      
+                        <div class="text-center position-fixed bottom-0 end-0">
+                            <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Fermer</button>
                         </div>
-                        <div class="offcanvas-body position-relative">
-                            
-                            <app-portfolio-detail [project]="project"></app-portfolio-detail>
-                          
-                            <div class="text-center position-fixed bottom-0 end-0">
-                                <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Fermer</button>
-                            </div>
-                        </div>
-                    </ng-template>
-                
-                    <button class="btn btn-lg btn-outline-light" (click)="openCanvas(content)">En savoir plus</button>
-                    <!-- OffCanvas End  -->
-
-                </div>
+                    </div>
+                </ng-template>
+                <!-- OffCanvas End  -->
+                <button class="btn btn-primary btn-custom" (click)="openCanvas(content)">En savoir plus</button>
             </div>
         </div>
     </div>

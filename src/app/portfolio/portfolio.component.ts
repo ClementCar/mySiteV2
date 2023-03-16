@@ -7,7 +7,7 @@ import { ProjectService } from '../services/project.service';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  // styles: ['.custom-card{height: 60vh} .card-img{height: 30vh}']
+  styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
   projects!: Project[];

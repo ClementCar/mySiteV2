@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
 import { SkillsComponent } from './skills/skills.component';
+import { BorderCardDirective } from './border-card.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SkillsComponent } from './skills/skills.component';
     HomeComponent,
     PortfolioComponent,
     PortfolioDetailComponent,
-    SkillsComponent
+    SkillsComponent,
+    BorderCardDirective
   ],
   imports: [
     BrowserModule,
