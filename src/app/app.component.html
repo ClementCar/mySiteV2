@@ -40,7 +40,10 @@
             <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="#btnTest" class="nav-link">Boutton Test</a>
+            <a href="#skills" class="nav-link">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Mon CV</a>
           </li>
         </ul>
       </div>
@@ -51,7 +54,7 @@
 <!-- Presentation start ============================================================================================= -->
 <section id="presentation" class="bg-light">
   <div class="container p-5">
-    <Div class="row text-center py-5 px-3">
+    <Div class="row text-center py-5 px-4">
       <h3 class="mb-5 fs-1">Présentation</h3>
       <hr>
       <p>zzzzzzzzzzzzzzzz zzzzz zzzzzzz zzzzzzzzzz zzzzzzzzzzz zzzzzzzzzzz zzzzzzzzz zzzzzzzzzzz zzzzzzzzzz zzzzzzzzzzzzzzzzz
@@ -67,94 +70,9 @@
 <app-portfolio></app-portfolio>
 
 <app-skills></app-skills>
-  
-<!-- Boutton offcanvas Trigger ============================================================================================= -->
-  
-<section id="btnTest" class="container my-4">
-  
-  <!-- Modal  -->
-  <ng-template #modalContent let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title">Hey ! Bienvenue !</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-    </div>
-    <div class="modal-body">
-      <p>Et oui, ça marche !</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn bt-outline-dark" (click)="modal.close('Close click')">Fermer</button>
-    </div>
-  </ng-template>
-  <button type="button" class="btn btn-lg btn-outline-light" (click)="openModal(modalContent)">Test du Modal !</button>
-  
-</section>
-<div class="container px-4 text-center">
-  <div class="row gx-5">
-    <div class="col">
-     <div class="p-3 border bg-light">Custom column padding</div>
-    </div>
-    <div class="col">
-      <div class="p-3 border bg-light">Custom column padding</div>
-    </div>
-  </div>
-</div>
 
-<!-- Test nav start -->
-<div class="container">
-  <ul ngbNav #nav="ngbNav" class="nav-tabs">
-    <li ngbNavItem>
-      <a ngbNavLink>First</a>
-      <ng-template ngbNavContent>
-        <ngb-carousel>
-          <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-              <img class="img-fluid" src="https://picsum.photos/1920/1080?random=1">
-            </div>
-          </ng-template>
-          <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-              <img class="img-fluid" src="https://picsum.photos/1920/1080?random=2">
-            </div>
-          </ng-template>
-          <ng-template ngbSlide>
-            <div class="picsum-img-wrapper">
-              <img class="img-fluid" src="https://picsum.photos/1920/1080?random=3">
-            </div>
-          </ng-template>
-        </ngb-carousel>
-      </ng-template>
-    </li>
-    <li ngbNavItem>
-      <a ngbNavLink>Second</a>
-      <ng-template ngbNavContent>
-        <video controls src="../assets/chouette/Chouette.mp4"></video>
-      </ng-template>
-    </li>
-  </ul>
-  <div [ngbNavOutlet]="nav"></div>
-</div>
-<!-- Test nav End -->
+<app-footer></app-footer>
 
-<!-- footer start -->
-<footer class="footer">
-  <div class="container">
-    <div class="row text-center my-5">
-      <div class="d-flex justify-content-center">
-        <a class="section__social__phone" href="tel:+33636671813" title="Numéro de téléphone">
-          <i class="fa-solid fa-phone"></i>
-        </a>
-        <a class="section__social__email" href="mailto:clementcarcenac@gmail.com" title="Adresse Email">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a class="section__social__github" href="https://github.com/ClementCar" target="_blank" title="GitHub">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a class="section__social__linkedin" href="https://www.linkedin.com/in/clement-carcenac-4a61a11b0" target="_blank" title="Linkedin">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-      <p>© 2023 Clément CARCENAC, tous droits réservés.</p>
-    </div>
-  </div>
-</footer>
-<!-- footer end -->
+<a href="#home" class="btn btn-dark position-fixed bottom-0 end-0 opacity-25">
+  <i class="fas fa-arrow-up"></i>
+</a>

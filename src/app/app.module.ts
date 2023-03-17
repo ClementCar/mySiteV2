@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BorderCardDirective } from './border-card.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BorderCardDirective } from './border-card.directive';
     PortfolioComponent,
     PortfolioDetailComponent,
     SkillsComponent,
-    BorderCardDirective
+    BorderCardDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
