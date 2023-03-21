@@ -13,15 +13,21 @@
 // $primary: #0A1828;
 // $secondary: #BFA181;
 // $light: #178582;
-$angular: #178582;
+
+
+// color theme
+// $primary: #ffdb58;
+// $secondary: #EFD5c0;
+// $light: #e4e2da;
+// $background: #35343d;
 
 // @import "../node_modules/bootstrap/scss/bootstrap";
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
 // body{
-//     background-color: #0A1828;
-//     color: #BFA181;
+//     background-color: $background;
+//     color: $secondary;
 // }
 // .custom-img{
 //     width: auto;

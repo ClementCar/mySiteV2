@@ -10,6 +10,8 @@ import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.co
 import { SkillsComponent } from './skills/skills.component';
 import { BorderCardDirective } from './border-card.directive';
 import { FooterComponent } from './footer/footer.component';
+import { ListAppComponent } from './list-app/list-app.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     PortfolioDetailComponent,
     SkillsComponent,
     BorderCardDirective,
-    FooterComponent
+    FooterComponent,
+    ListAppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
