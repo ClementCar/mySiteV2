@@ -1,11 +1,11 @@
 <!-- Nav caroussel / video start -->
 <ul ngbNav #nav="ngbNav" class="nav-tabs">
     <li ngbNavItem>
-      <a ngbNavLink><i class="far fa-image"></i></a>
+      <a ngbNavLink><i class="far fa-image text-dark"></i></a>
       <ng-template ngbNavContent>
 
         <!-- Caroussel Start -->
-        <ngb-carousel class="bg-primary vh-60">
+        <ngb-carousel class="bg-light vh-60">
             <ng-template ngbSlide *ngFor="let image of project.images">
               <div class="picsum-img-wrapper">
                 <img [src]="image" alt="" class="custom-img mx-auto d-block">
@@ -31,9 +31,9 @@
       </ng-template>
     </li>
     <li ngbNavItem>
-      <a ngbNavLink><i class="fas fa-video"></i></a>
+      <a ngbNavLink><i class="fas fa-video text-dark"></i></a>
       <ng-template ngbNavContent>
-        <video class="mx-auto d-block" controls [src]="project.video"></video>
+        <video class="mx-auto d-block" controls [src]="project.video" style="max-height: 80vh"></video>
       </ng-template>
     </li>
   </ul>

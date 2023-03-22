@@ -5,7 +5,7 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-4" *ngIf="projects">
 
         <div class="col" *ngFor="let project of projects">
-            <div class="card custom-card position-relative" borderCard>
+            <div class="card custom-card position-relative bg-light" borderCard>
                 <img [src]="project.logo" [alt]="project.name" class="card-img my-auto">
                 <!-- <div class="card-body">
                     <h5 class="card-title">{{project.name}}</h5>
@@ -32,6 +32,7 @@
             </div>
         </div>
     </div>
-    <a href="" class="btn">Voir mes autres projets</a>
+    <img src="../../assets/images/gallery.svg" alt="">
+    <a href="" class="btn btn-primary">Voir mes autres projets</a>
 </section>
 <!-- Portfolio End ============================================================================================= -->

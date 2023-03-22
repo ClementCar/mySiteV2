@@ -23,7 +23,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   openCanvas(content: any) {
-    this.offCanvas.open(content, {position: bottom, panelClass: "h-100"})
+    this.offCanvas.open(content, {position: bottom, panelClass: "h-100 bg-light"})
   }
 
 }

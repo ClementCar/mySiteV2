@@ -20,6 +20,7 @@ import { Component, OnInit } from '@angular/core';
             <a class="d-flex__linkedin" href="https://www.linkedin.com/in/clement-carcenac-4a61a11b0" target="_blank" title="Linkedin">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
+            <!-- class a _> border border-secondary -->
           </div>
           <p class="mt-4 mb-0">© 2023 Clément CARCENAC, tous droits réservés.</p>
         </div>

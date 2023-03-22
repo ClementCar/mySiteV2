@@ -4,8 +4,8 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
   selector: '[borderCard]'
 })
 export class BorderCardDirective {
-  private initialColor: string = '#f5f5f5';
-  private defaultColor: string = '#009688';
+  private initialColor: string = '#e4e2da';
+  private defaultColor: string = '#ffdb58';
   // private defaultHeight : number = 100;
 
   constructor(private el: ElementRef) {
@@ -19,7 +19,7 @@ export class BorderCardDirective {
     this.setBorder(this.borderColor || this.defaultColor);
   }
   @HostListener('mouseleave') onMouseLeave() {
-    this.setBorder('#f5f5f5');
+    this.setBorder('#e4e2da');
   }
 
   setHeight(height: number) {
