@@ -12,6 +12,7 @@ import { BorderCardDirective } from './border-card.directive';
 import { FooterComponent } from './footer/footer.component';
 import { ListAppComponent } from './list-app/list-app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PresentationComponent } from './presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BorderCardDirective,
     FooterComponent,
     ListAppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,

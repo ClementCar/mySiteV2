@@ -1,48 +1,71 @@
-.card-custom{
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: .5s ease;
+.col{
     & i {
-        font-size: 70px;
-        transition: .2s ease;
-        z-index: 100;
+        width: 30px;
     }
-    &__progress{
-        position: relative;
-        width: 90%;
-        height: 90%;
-        border-radius: 50%;
-        background: conic-gradient(#7d2ae8 75deg, #ededed 0deg);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // transform: translateY(50%);
-        transition: .5s ease;
+    &__html{
+        & i {
+            color: #e44d27;
+        }
+        &__progress{
+            background: #e44d27;
+        }
     }
-    &__progress::before{
-        content: "";
-        position: absolute;
-        height: 80%;
-        width: 80%;
-        border-radius: 50%;
-        background-color: #fff;
+    &__css{
+        & i {
+            color: #4264af;
+        }
+        &__progress{
+            background: #4264af;
+        }
+    }
+    &__bootstrap{
+        & i {
+            color: #553c7d;
+        }
+        &__progress{
+            background: #553c7d;
+        }
+    }
+    &__js{
+        & i {
+            color: #f2df21;
+        }
+        &__progress{
+            background: #f2df21;
+        }
+    }
+    &__angular{
+        & i {
+            color: #e33038;
+        }
+        &__progress{
+            background: #e33038;
+        }
+    }
+    &__node{
+        & i {
+            color: #99ca5d;
+        }
+        &__progress{
+            background: #99ca5d;
+        }
+    }
+    &__sql{
+        & i {
+            color: #11678c;
+        }
+        &__progress{
+            background: #11678c;
+        }
     }
 }
 
-img {
-    max-width: 100%;
+.progress{
+    height: 40px;
+    width: 93%;
 }
 
-// .card:hover {
-//     // transform: matrix(0, 1, 1, 0, 0, 0);
-//     transform: rotateX(180deg);
-//     & i {
-//         visibility: hidden;
-//     }
-//     &__progress{
-//         transform: translateY(-50%);
-//     }
-// }
+.d-flex{
+    justify-content: space-between;
+    align-items: center;
+}

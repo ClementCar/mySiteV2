@@ -4,13 +4,12 @@
     <hr>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-4" *ngIf="projects">
 
+        <!-- image ici -->
+
         <div class="col" *ngFor="let project of projects">
             <div class="card custom-card position-relative bg-light" borderCard>
                 <img [src]="project.logo" [alt]="project.name" class="card-img my-auto">
-                <!-- <div class="card-body">
-                    <h5 class="card-title">{{project.name}}</h5>
-                    <p class="card-text">{{project.description}}</p>
-                </div> -->
+
                 <!-- OffCanvas Start -->
                 <ng-template #content let-offcanvas>
                     <div class="offcanvas-header text-center">
@@ -28,11 +27,17 @@
                     </div>
                 </ng-template>
                 <!-- OffCanvas End  -->
+
                 <button class="btn btn-primary btn-custom" (click)="openCanvas(content)">En savoir plus</button>
             </div>
         </div>
+
+        <!-- image ici -->
+
     </div>
-    <img src="../../assets/images/gallery.svg" alt="">
-    <a href="" class="btn btn-primary">Voir mes autres projets</a>
+    <div class="row position-relative">
+        <img src="../../assets/images/gallery.svg" alt="">
+        <a href="" class="btn btn-primary btn-other">Voir mes autres projets</a>
+    </div>
 </section>
 <!-- Portfolio End ============================================================================================= -->
