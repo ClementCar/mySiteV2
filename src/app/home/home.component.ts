@@ -4,8 +4,7 @@ import { delay } from 'rxjs';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styles: [
-  ]
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   hours!: string;

@@ -2,11 +2,13 @@
 <section id ="portfolio" class="section container p-5 text-center">
     <h3 class="mb-5 mt-3 fs-1">Mes Projets</h3>
     <hr>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-4" *ngIf="projects">
+    <div class="row g-4 p-4" *ngIf="projects">
 
-        <!-- image ici -->
+        <div class="col-12 col-lg-6">
+            <img src="../../assets/images/books.svg" alt="livre">
+        </div>
 
-        <div class="col" *ngFor="let project of projects">
+        <div class="col-12 col-md-6 col-lg-3" *ngFor="let project of projects">
             <div class="card custom-card position-relative bg-light" borderCard>
                 <img [src]="project.logo" [alt]="project.name" class="card-img my-auto">
 
@@ -20,8 +22,12 @@
                     <div class="offcanvas-body position-relative">
                         
                         <app-portfolio-detail [project]="project"></app-portfolio-detail>
+
+                        <div class="text-center mt-3">
+                            <a class="btn btn-primary" target="_blank" [href]="project.gitlink">En voir plus</a>
+                        </div>
                       
-                        <div class="text-center position-fixed bottom-0 end-0">
+                        <div class="text-center btn-fixed">
                             <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Fermer</button>
                         </div>
                     </div>
@@ -32,12 +38,11 @@
             </div>
         </div>
 
-        <!-- image ici -->
+        <div class="col-12 col-lg-6">
+            <img src="../../assets//images/dev-task.svg" alt="Tâches développeur">
+        </div>
 
     </div>
-    <div class="row position-relative">
-        <img src="../../assets/images/gallery.svg" alt="">
-        <a href="" class="btn btn-primary btn-other">Voir mes autres projets</a>
-    </div>
+    <a href="https://github.com/ClementCar" target="_blank" class="btn btn-primary mt-3">Voir mes autres projets</a>
 </section>
 <!-- Portfolio End ============================================================================================= -->

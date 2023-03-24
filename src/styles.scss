@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-
 // Palettes de couleurs 
 
 // Couleurs utilisées : Bleu classique foncé (#0A1828), turquoise (#178582), or (#BFA181)
@@ -42,4 +40,10 @@ hr {
 
 img{
     max-width: 100%;
+}
+
+.btn-fixed{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
 }
