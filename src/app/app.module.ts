@@ -1,10 +1,11 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 import * as fr from '@angular/common/locales/fr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioDetailComponent } from './portfolio-detail/portfolio-detail.component';
@@ -30,6 +31,7 @@ import { registerLocaleData } from '@angular/common';
     PresentationComponent
   ],
   imports: [
+    NgsRevealModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule

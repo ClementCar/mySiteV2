@@ -1,10 +1,10 @@
 <!-- Skills start ============================================================================================= -->
-<section id="skills" class="section p-5">
+<section id="skills" class="section p-5"  [ngsRevealSet]="{reset: true}" [ngsSelector]="'.reveal'">
     <div class="container text-center position-relative">
-      <h3 class="my-5 fs-1">Mes Compétences</h3>
+      <h3 class="my-5 fs-1 reveal">Mes Compétences</h3>
       <hr>
       <div class="row row-cols-1 row-cols-md-2 fs-2 my-5">
-        <div class="col">
+        <div class="col reveal">
           <img src="../../assets/images/performance.svg" alt="">
         </div>
         <div class="col">
@@ -12,7 +12,7 @@
             <i class="fab fa-html5"></i>
             <p class="w-100 mx-1 my-0"><ngb-progressbar type="danger" class="progress-custom" [value]="84" [striped]="true" [animated]="true" [height]="height">HTML5</ngb-progressbar></p>
           </div> -->
-          <div class="d-flex col__html mb-4">
+          <div class="d-flex col__html mb-4 reveal">
             <i class="fab fa-html5"></i>
             <div class="progress">
               <div class="progress-bar col__html__progress" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width: 84%;">
@@ -20,7 +20,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex col__css mb-4">
+          <div class="d-flex col__css mb-4 reveal">
             <i class="fab fa-css3"></i>
             <div class="progress">
               <div class="progress-bar col__css__progress" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="width: 84%;">
@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex col__bootstrap mb-4">
+          <div class="d-flex col__bootstrap mb-4 reveal">
             <i class="fab fa-bootstrap"></i>
             <div class="progress">
               <div class="progress-bar col__bootstrap__progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
@@ -36,7 +36,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex col__js mb-4">
+          <div class="d-flex col__js mb-4 reveal">
             <i class="fab fa-js"></i>
             <div class="progress">
               <div class="progress-bar col__js__progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
@@ -44,7 +44,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex col__angular mb-4">
+          <div class="d-flex col__angular mb-4 reveal">
             <i class="fab fa-angular"></i>
             <div class="progress">
               <div class="progress-bar col__angular__progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
@@ -52,7 +52,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex col__node mb-4">
+          <div class="d-flex col__node mb-4 reveal">
             <i class="fab fa-node-js"></i>
             <div class="progress">
               <div class="progress-bar col__node__progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
@@ -60,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex col__sql mb-4">
+          <div class="d-flex col__sql mb-4 reveal">
             <i class="fa-solid fa-database"></i>
             <div class="progress">
               <div class="progress-bar  col__sql__progress" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">

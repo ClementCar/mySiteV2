@@ -4,13 +4,13 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-presentation',
   template: `
     <!-- Presentation start ============================================================================================= -->
-    <section id="presentation" class="section">
-      <div class="container p-5">
+    <section id="presentation" class="section" [ngsRevealSet]="{reset: true}" [ngsSelector]="'.reveal'">
+      <div class="container p-5 reveal">
         <Div class="text-center py-5 px-4">
           <h3 class="mb-5 fs-1">Présentation</h3>
           <hr>
           <div class="row row-cols-1 row-cols-md-2 ">
-            <div class="col">
+            <div class="col reveal">
               <p class="fs-3 mt-5">
                 Hey ! Bienvenue sur mon site !<br>
                 Je suis un jeune développeur passionné dans le domaine du Web. Diplômé depuis bientôt un ans, je continue à me former en permanence 
@@ -19,7 +19,7 @@ import { Component, OnInit } from '@angular/core';
                 Bonne Navigation !
               </p>
             </div>
-            <div class="col">
+            <div class="col reveal">
               <img src="../assets/images/teachpres.svg" alt="présentation">
             </div>
           </div>

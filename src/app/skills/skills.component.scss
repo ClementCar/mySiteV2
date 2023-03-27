@@ -69,3 +69,17 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.progress-bar{
+    // transform: translateX(-100%);
+    transition: progress .5s ease;
+}
+
+@keyframes progress {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

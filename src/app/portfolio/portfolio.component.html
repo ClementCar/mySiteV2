@@ -1,14 +1,14 @@
 <!-- Portfolio Start ============================================================================================= -->
 <section id ="portfolio" class="section container p-5 text-center">
-    <h3 class="mb-5 mt-3 fs-1">Mes Projets</h3>
+    <h3 class="mb-5 mt-3 fs-1" [ngsReveal]="{reset: true}">Mes Projets</h3>
     <hr>
     <div class="row g-4 p-4" *ngIf="projects">
 
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" [ngsReveal]="{reset: true}">
             <img src="../../assets/images/books.svg" alt="livre">
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3" *ngFor="let project of projects">
+        <div class="col-12 col-md-6 col-lg-3" *ngFor="let project of projects" [ngsReveal]="{reset: true}">
             <div class="card custom-card position-relative bg-light" borderCard>
                 <img [src]="project.logo" [alt]="project.name" class="card-img my-auto">
 
@@ -38,11 +38,11 @@
             </div>
         </div>
 
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" [ngsReveal]="{reset: true}">
             <img src="../../assets//images/dev-task.svg" alt="Tâches développeur">
         </div>
 
     </div>
-    <a href="https://github.com/ClementCar" target="_blank" class="btn btn-primary mt-3">Voir mes autres projets</a>
+    <a href="https://github.com/ClementCar" target="_blank" class="btn btn-primary mt-3" [ngsReveal]="{reset: true}">Voir mes autres projets</a>
 </section>
 <!-- Portfolio End ============================================================================================= -->
