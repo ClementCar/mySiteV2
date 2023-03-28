@@ -1,6 +1,6 @@
 <!-- Portfolio Start ============================================================================================= -->
 <section id ="portfolio" class="section container p-5 text-center">
-    <h3 class="mb-5 mt-3 fs-1" [ngsReveal]="{reset: true}">Mes Projets</h3>
+    <h3 class="mb-5 mt-3" [ngsReveal]="{reset: true}">Mes Projets</h3>
     <hr>
     <div class="row g-4 p-4" *ngIf="projects">
 
@@ -17,7 +17,7 @@
                     <div class="offcanvas-header text-center">
                         <h4 class="offcanvas-title">{{project.name}}</h4>
                         <!-- <img [src]="project.logo" alt=""> -->
-                        <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
+                        <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="offcanvas.dismiss('Cross click')" ></button>
                     </div>
                     <div class="offcanvas-body position-relative">
                         
@@ -28,7 +28,7 @@
                         </div>
                       
                         <div class="text-center btn-fixed">
-                            <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Fermer</button>
+                            <button type="button" class="btn btn-outline-light" (click)="offcanvas.close('Close click')">Fermer</button>
                         </div>
                     </div>
                 </ng-template>

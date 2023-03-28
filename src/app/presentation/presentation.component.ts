@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
     <section id="presentation" class="section" [ngsRevealSet]="{reset: true}" [ngsSelector]="'.reveal'">
       <div class="container p-5 reveal">
         <Div class="text-center py-5 px-4">
-          <h3 class="mb-5 fs-1">Présentation</h3>
+          <h3 class="mb-5">Présentation</h3>
           <hr>
-          <div class="row row-cols-1 row-cols-md-2 ">
+          <div class="row row-cols-1 row-cols-lg-2 ">
             <div class="col reveal">
               <p class="fs-3 mt-5">
                 Hey ! Bienvenue sur mon site !<br>
